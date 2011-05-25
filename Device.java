@@ -12,5 +12,9 @@ public abstract class Device{
   }
 
   public abstract void draw();
+  
+  public void addGeometry(Geometry geometry){
+    geometry.addToDevice(this);
+  }
 }
 
