@@ -1,20 +1,31 @@
 import javax.swing.JComponent;
+import java.awt.Color;
 
 public abstract class Device{
-  private JComponent jComponent;
+/*  private JComponent jComponent;
 
   public void setJComponent(JComponent jComponent){
     this.jComponent = jComponent;
   }
+*/
 
-  public JComponent getJComponent(){
+  public  abstract JComponent getJComponent();
+/*{
     return jComponent;
   }
+*/
 
-  public abstract void draw();
+//  public abstract void draw();
   
-  public void addGeometry(Geometry geometry){
+  public void drawGeometry(Geometry geometry){
+
+    getJComponent().getGraphics().setColor(Color.red);
+
     geometry.addToDevice(this);
   }
+
+//{
+//    geometry.addToDevice(this);
+//  }
 }
 

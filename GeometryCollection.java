@@ -5,9 +5,9 @@ import java.util.Iterator;
 public abstract class GeometryCollection<E extends Geometry> implements Collection<E> {
     private ArrayList<E> list = new ArrayList<E>();
 
-    public void addAllToDevice(Device device){
+    public void drawToDevice(Device device){
       for(E e : list){
-        device.addGeometry(e);
+        device.drawGeometry(e);
       }
     }
 
