@@ -1,4 +1,6 @@
+import java.awt.*;
+
 public interface Geometry{
-  public void addToDevice(Device device);
+  public void draw(Graphics g);
 }
 

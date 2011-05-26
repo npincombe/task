@@ -1,7 +1,24 @@
-public class Ellipse implements Geometry {
-    private int x, y, height, width;
+import java.awt.*;
 
-    public void addToDevice(Device device) {
-        device.getJComponent().getGraphics().drawOval(x, y, height, width);
+public class Ellipse extends Point {
+    protected int height;
+    protected int width;
+
+    public Ellipse(int x, int y, int height, int width){
+        super(x,y);
+        this.height = height;
+        this.width = width;
+    }
+
+    public void draw(Graphics g) {
+        g.drawOval(getX(), getY(), getWidth(), getHeight());
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWidth() {
+        return width;
     }
 }
