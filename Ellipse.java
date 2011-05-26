@@ -4,8 +4,8 @@ public class Ellipse extends Point {
     protected int height;
     protected int width;
 
-    public Ellipse(int x, int y, int height, int width){
-        super(x,y);
+    public Ellipse(int x, int y, int height, int width) {
+        super(x, y);
         this.height = height;
         this.width = width;
     }

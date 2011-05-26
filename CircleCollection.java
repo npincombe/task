@@ -1,3 +1,3 @@
-public class CircleCollection extends GeometryCollection<Circle>{
+public class CircleCollection extends GeometryCollection<Circle> {
 
 }

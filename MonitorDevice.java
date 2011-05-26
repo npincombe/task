@@ -3,7 +3,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class MonitorDevice extends Device {
     protected List<Geometry> geometryList = new ArrayList<Geometry>();
     protected JComponent jComponent;

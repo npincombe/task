@@ -1,9 +1,12 @@
 import java.awt.*;
 
-public class Square implements Geometry {
-    private int x, y, height;
+public class Square extends Rectangle {
+
+    public Square(int x, int y, int height) {
+        super(x, y, height, height);
+    }
 
     public void draw(Graphics g) {
-        g.drawRect(x, y, height, height);
+        g.drawRect(getX(), getY(), getHeight(), getHeight());
     }
 }

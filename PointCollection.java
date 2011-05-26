@@ -1,2 +1,2 @@
-public class PointCollection extends GeometryCollection<Point>{
+public class PointCollection extends GeometryCollection<Point> {
 }

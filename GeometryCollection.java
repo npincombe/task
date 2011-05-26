@@ -5,10 +5,10 @@ import java.util.Iterator;
 public abstract class GeometryCollection<E extends Geometry> implements Collection<E> {
     private ArrayList<E> list = new ArrayList<E>();
 
-    public void drawToDevice(Device device){
-      for(E e : list){
-        device.drawGeometry(e);
-      }
+    public void drawToDevice(Device device) {
+        for (E e : list) {
+            device.drawGeometry(e);
+        }
     }
 
     public int size() {
