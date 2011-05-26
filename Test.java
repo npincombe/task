@@ -1,6 +1,7 @@
 public class Test {
     public static void main(String[] args) {
         MonitorDevice md = new MonitorDevice();
+        SeparateMonitorDevice smd = new SeparateMonitorDevice();
 
         CircleCollection cc = new CircleCollection();
         cc.add(new Circle(10, 10, 50));
@@ -18,5 +19,8 @@ public class Test {
         PointCollection pc = new PointCollection();
         pc.add(new Point(60, 60));
         pc.drawToDevice(md);
+
+        smd.drawGeometryCollection(cc);
+        smd.drawGeometryCollection(pc);
     }
 }

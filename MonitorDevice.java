@@ -22,6 +22,11 @@ public class MonitorDevice extends Device {
         getJComponent().repaint();
     }
 
+    public void drawGeometryCollection(final GeometryCollection<? extends Geometry> collection) {
+        geometryList.addAll(collection);
+        getJComponent().repaint();
+    }
+
     public JFrame getFrame() {
         return frame;
     }
