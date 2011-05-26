@@ -1,7 +1,23 @@
-public class Point implements Geometry {
-    private int x, y;
+import java.awt.*;
 
-    public void addToDevice(Device device) {
-        device.getJComponent().getGraphics().drawOval(x, y, 1, 1);
+public class Point implements Geometry {
+    protected int x;
+    protected int y;
+
+    public Point(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public void draw(Graphics g) {
+        g.drawOval(getX(), getY(), 1, 1);
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

@@ -1,7 +1,9 @@
+import java.awt.*;
+
 public class Rectangle implements Geometry {
     private int x, y, width, height;
 
-    public void addToDevice(Device device) {
-        device.getJComponent().getGraphics().drawRect(x, y, width, height);
+    public void draw(Graphics g) {
+        g.drawRect(x, y, width, height);
     }
 }
