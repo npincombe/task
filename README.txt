@@ -9,7 +9,8 @@ Design Notes:
     The framework uses a Geometry interface with a draw method. Every object that implements Geometry must be
     able to be drawn and is responsible for defining how itself is drawn.
     A 'Point' is the most basic Geometry object and I simply let it be drawn
-    as a circle with 1 pixel in radius. Other supported objects can easily be added my
+    as a line to itself but another example of how to implement it would be to draw a circle with 1 pixel in radius.
+    Other supported objects can easily be added by
     implementing the Geometry interface or extending another object in the framework such as
     'Point'. For example, 'Rectangle' can de defined by a 'Point' and a height and width
     and a rectangle is responsible for defining how it is drawn.
