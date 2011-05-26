@@ -29,7 +29,7 @@ public class MonitorDevice extends Device {
     public MonitorDevice() {
         frame = new JFrame();
         frame.setBounds(100, 20, 500, 500);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jComponent = new MonitorComponent();
         frame.getContentPane().add(jComponent);
         frame.setVisible(true);

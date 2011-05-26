@@ -10,7 +10,8 @@ public class Point implements Geometry {
     }
 
     public void draw(Graphics g) {
-        g.drawOval(getX(), getY(), 1, 1);
+        // draw a line to represent the point
+        g.drawLine(getX(), getY(),getX(), getY());
     }
 
     public int getX() {
